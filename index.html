@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p>Hello</p>
+    
+    <script>
+
+let ageUser = prompt("Please, enter you age","0");
+
+let checkAge = function(ageUser){
+    if (typeof(+ageUser) == "number"){
+        if (ageUser < 18){
+
+           alert(`You don’t have access cause your age is ${ageUser}. It’s less then`)
+        } 
+        else if ((ageUser >=18) && (ageUser < 60)){
+
+            alert(`Welcome!`)
+        }
+        else if (ageUser >= 60){
+
+            alert("Keep calm and look Culture channel")
+        }
+        else alert(`Technical work`)
+    }
+
+}
+
+checkAge(ageUser);
+    </script>
+</body>
+</html>
